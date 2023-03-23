@@ -1,0 +1,121 @@
+/* :root {
+  --sizeGrid: 500px;
+} */
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  min-height: 100vh;
+  justify-content: flex-start;
+  background-color: blanchedalmond;
+}
+
+header {
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  margin: 24px auto;
+}
+
+main {
+  width: 100vw;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  border: 1px solid black;
+  width: 500px;
+  height: 500px;
+}
+
+.square {
+  user-select: none;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+.settingsContainer {
+  margin-right: 64px;
+  background-color: whitesmoke;
+  border: 2px solid black;
+  border-radius: 8px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.colorPicker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+#colorpicker {
+  width: 80px;
+  height: 80px;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  background-color: transparent;
+}
+
+#colorpicker::-webkit-color-swatch {
+  border: none;
+  border-radius: 50%;
+}
+
+.optionButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: stretch;
+}
+
+button {
+  text-decoration: none;
+  text-align: center;
+  vertical-align: center;
+  margin: 12px 12px;
+  padding: 8px 24px;
+  border-radius: 6px;
+  border: 1px solid #1b1b1b;
+  color: #1b1b1b;
+  background-color: rgb(221, 221, 221);
+}
+
+.optionButton > .selected {
+  color: white;
+  background-color: #000000;
+  border: 1px solid #1b1b1b;
+}
+
+.colorPicker > .selected {
+  color: white;
+  background-color: #000000;
+  border: 1px solid #1b1b1b;
+}
+
+button:hover {
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
